@@ -1,0 +1,19 @@
+{
+  "name": "aoc2023",
+  "version": "0.0.1",
+  "description": "Advent of code 2023",
+  "main": "",
+  "repository": "https://github.com/DavidHenri008/advent-of-code-2023",
+  "author": "David Henri",
+  "license": "MIT",
+  "scripts": {
+    "initDays": "node ./scripts/init.js",
+    "start": "node ./scripts/start.js",
+    "update": "yarn upgrade-interactive --latest --exact"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "prettier": "2.8.8"
+  }
+}
