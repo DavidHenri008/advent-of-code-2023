@@ -8,17 +8,6 @@ const {
 } = require('../scripts/constants');
 
 const loadInput = (day) => {
-  console.log(
-    'parth',
-    path.join(
-      process.cwd(),
-      BASE_FOLDER,
-      DAY_FOLDER_NAME.replace('{{day}}', day),
-      INPUT_FOLDER_NAME,
-      INPUT_FILE_NAME
-    )
-  );
-
   try {
     var data = fs.readFileSync(
       path.join(
@@ -33,7 +22,7 @@ const loadInput = (day) => {
   } catch (e) {
     console.log('Error:', e.stack);
   }
-  return data.toString();
+  return data.toString().split('\n');
 };
 
 module.exports = {

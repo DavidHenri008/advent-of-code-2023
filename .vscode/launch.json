@@ -9,8 +9,8 @@
       "request": "launch",
       "name": "Launch Program",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}\\src\\scripts\\cli.js",
-      "args": []
+      "program": "${workspaceFolder}\\src\\scripts\\start.js",
+      "args": [3]
     }
   ]
 }

@@ -65,8 +65,7 @@ async function initDays() {
     // Create index.js if it doesn't exist.
 
     if (!fs.existsSync(indexFilePath)) {
-      const data =
-        "const fs = require('fs');\nconst path = require('path');\nconst { loadInput } = require('../utils');\n\nconst input = loadInput(1);\n\n";
+      const data = `const fs = require('fs');\nconst path = require('path');\nconst { loadInput } = require('../utils');\n\nconst input = loadInput(${day});\n\n/**** Part ONE ****/\nconst part1 = () => {\n\n};\n\n/**** Part TWO ****/\nconst part2 = () => {\n\n};\n\npart1();\npart2();\n`;
       fs.writeFileSync(indexFilePath, data);
     }
   }
